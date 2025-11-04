@@ -1,73 +1,86 @@
 body {
-  font-family: 'Tajawal', sans-serif;
-  background: #f4f7fb;
+  font-family: "Cairo", sans-serif;
+  background-color: #d6f4ff;
+  color: #222;
   margin: 0;
-  color: #333;
-}
-header {
-  background: #0078d4;
-  color: white;
-  padding: 15px;
+  padding: 0;
   text-align: center;
 }
-header nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
+
+header, footer {
+  background: #bde7ff;
+  padding: 20px;
+  border-bottom: 2px solid #91d4ff;
 }
-header nav a.active {
-  text-decoration: underline;
-}
-main {
-  padding: 30px;
-  text-align: center;
-}
-.home .buttons {
+
+footer {
   margin-top: 30px;
+  font-size: 0.9rem;
 }
-.btn {
-  display: inline-block;
-  padding: 12px 25px;
-  margin: 10px;
-  border-radius: 8px;
-  color: white;
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.home-btn {
+  background: white;
+  padding: 15px 40px;
+  border-radius: 12px;
   text-decoration: none;
-  transition: 0.3s;
+  color: #0077b6;
+  font-size: 1.3rem;
+  box-shadow: 0 0 8px #ccefff;
+  transition: all 0.3s ease;
 }
-.btn.word { background: #185abd; }
-.btn.excel { background: #107c41; }
-.btn:hover {
-  opacity: 0.85;
+
+.home-btn:hover {
+  background: #fffad6;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffee99;
 }
-#search {
-  width: 80%;
-  max-width: 400px;
-  padding: 10px;
-  margin: 20px auto;
-  display: block;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-#shortcuts-list {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 15px;
 }
-.shortcut {
+
+.card {
   background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  padding: 15px 20px;
+  width: 230px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
-footer {
-  background: #0078d4;
-  color: white;
-  text-align: center;
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #ffee77;
+  background-color: #fffce8;
+}
+
+#searchBox {
+  margin: 20px;
   padding: 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  width: 60%;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+.about-container {
+  margin: 50px;
+  font-size: 1.2rem;
+}
+
+.whatsapp {
+  color: #25D366;
+  text-decoration: none;
+  font-weight: bold;
 }
