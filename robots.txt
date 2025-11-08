@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mddaaoo9-ux.github.io/Talym/sitemap.xml
