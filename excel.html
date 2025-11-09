@@ -3,84 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>اختصارات Excel</title>
+  <title>اختصارات Excel - العالمي</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="page-header">
-    <h1>📗 اختصارات Microsoft Excel</h1>
-    <input type="text" id="searchBox" placeholder="ابحث عن اختصار...">
+
+  <!-- ====== الهيدر ====== -->
+  <header class="header">
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="word.html">وورد</a></li>
+        <li><a href="excel.html" class="active">إكسل</a></li>
+        <li><a href="tools.html">الأدوات</a></li>
+        <li><a href="blog.html">المدونة</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="shortcuts-container">
+  <!-- ====== المحتوى ====== -->
+  <main class="content">
+    <h1>اختصارات Microsoft Excel</h1>
+    <p>
+      في الصفحة دي هتتعلم أهم اختصارات Excel اللي بتوفر وقتك في التعامل مع الجداول والمعادلات.
+    </p>
 
-    <section>
-      <h2>🧮 الخلايا والتحديد</h2>
-      <div class="cards">
-        <div class="card">Ctrl + C — نسخ الخلية</div>
-        <div class="card">Ctrl + X — قص الخلية</div>
-        <div class="card">Ctrl + V — لصق</div>
-        <div class="card">Ctrl + Z — تراجع</div>
-        <div class="card">Ctrl + Y — إعادة</div>
-        <div class="card">Ctrl + Space — تحديد العمود بالكامل</div>
-      </div>
-    </section>
+    <div class="shortcuts-container">
+      <input type="text" id="searchInput" placeholder="ابحث عن اختصار..." onkeyup="searchTable()">
 
-    <section>
-      <h2>📈 الصيغ والمعادلات</h2>
-      <div class="cards">
-        <div class="card">Alt + = — جمع تلقائي</div>
-        <div class="card">Shift + F9 — حساب الورقة الحالية</div>
-        <div class="card">F4 — تثبيت مرجع الخلية</div>
-        <div class="card">Ctrl + ` — عرض أو إخفاء المعادلات</div>
-        <div class="card">Ctrl + Shift + Enter — إدخال معادلة صفيف</div>
-        <div class="card">Alt + M + U + S — إدراج دالة</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>🧭 التنقل داخل الورقة</h2>
-      <div class="cards">
-        <div class="card">Ctrl + Home — الانتقال إلى الخلية A1</div>
-        <div class="card">Ctrl + End — الانتقال إلى آخر خلية مستخدمة</div>
-        <div class="card">Ctrl + → — الانتقال لنهاية البيانات يمينًا</div>
-        <div class="card">Ctrl + ← — الانتقال لنهاية البيانات يسارًا</div>
-        <div class="card">Ctrl + ↑ — الانتقال لأعلى البيانات</div>
-        <div class="card">Ctrl + ↓ — الانتقال لأسفل البيانات</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>🎨 التنسيق</h2>
-      <div class="cards">
-        <div class="card">Ctrl + 1 — تنسيق الخلايا</div>
-        <div class="card">Ctrl + B — جعل الخط عريض</div>
-        <div class="card">Ctrl + I — جعل الخط مائل</div>
-        <div class="card">Ctrl + U — وضع خط تحت النص</div>
-        <div class="card">Alt + H + O + I — ضبط عرض العمود تلقائيًا</div>
-        <div class="card">Alt + H + A + C — توسيط النص في الخلية</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>💾 الحفظ والطباعة</h2>
-      <div class="cards">
-        <div class="card">Ctrl + S — حفظ الملف</div>
-        <div class="card">F12 — حفظ باسم</div>
-        <div class="card">Ctrl + P — طباعة الورقة</div>
-        <div class="card">Ctrl + N — ملف جديد</div>
-        <div class="card">Ctrl + O — فتح ملف</div>
-        <div class="card">Alt + F4 — إغلاق Excel</div>
-      </div>
-    </section>
-
+      <table id="shortcutsTable">
+        <thead>
+          <tr>
+            <th>الاختصار</th>
+            <th>الوصف</th>
+            <th>نسخ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Ctrl + N</td><td>فتح مصنف جديد</td><td><button onclick="copyText('Ctrl + N')">نسخ</button></td></tr>
+          <tr><td>Ctrl + O</td><td>فتح ملف موجود</td><td><button onclick="copyText('Ctrl + O')">نسخ</button></td></tr>
+          <tr><td>Ctrl + S</td><td>حفظ المصنف الحالي</td><td><button onclick="copyText('Ctrl + S')">نسخ</button></td></tr>
+          <tr><td>Ctrl + P</td><td>طباعة المصنف</td><td><button onclick="copyText('Ctrl + P')">نسخ</button></td></tr>
+          <tr><td>Ctrl + C</td><td>نسخ الخلايا المحددة</td><td><button onclick="copyText('Ctrl + C')">نسخ</button></td></tr>
+          <tr><td>Ctrl + X</td><td>قص الخلايا المحددة</td><td><button onclick="copyText('Ctrl + X')">نسخ</button></td></tr>
+          <tr><td>Ctrl + V</td><td>لصق المحتوى المنسوخ</td><td><button onclick="copyText('Ctrl + V')">نسخ</button></td></tr>
+          <tr><td>Ctrl + Z</td><td>تراجع عن آخر عملية</td><td><button onclick="copyText('Ctrl + Z')">نسخ</button></td></tr>
+          <tr><td>Ctrl + Y</td><td>إعادة آخر عملية تراجع</td><td><button onclick="copyText('Ctrl + Y')">نسخ</button></td></tr>
+          <tr><td>Ctrl + ↑</td><td>الانتقال لأعلى العمود</td><td><button onclick="copyText('Ctrl + ↑')">نسخ</button></td></tr>
+          <tr><td>Ctrl + ↓</td><td>الانتقال لأسفل العمود</td><td><button onclick="copyText('Ctrl + ↓')">نسخ</button></td></tr>
+          <tr><td>Ctrl + →</td><td>الانتقال إلى نهاية الصف</td><td><button onclick="copyText('Ctrl + →')">نسخ</button></td></tr>
+          <tr><td>Ctrl + ←</td><td>الانتقال إلى بداية الصف</td><td><button onclick="copyText('Ctrl + ←')">نسخ</button></td></tr>
+          <tr><td>Ctrl + Shift + L</td><td>إضافة أو إزالة الفلاتر</td><td><button onclick="copyText('Ctrl + Shift + L')">نسخ</button></td></tr>
+          <tr><td>Ctrl + Shift + "</td><td>نسخ القيمة من الخلية أعلاه</td><td><button onclick="copyText('Ctrl + Shift + \"')">نسخ</button></td></tr>
+          <tr><td>Alt + =</td><td>إدخال دالة الجمع التلقائي</td><td><button onclick="copyText('Alt + =')">نسخ</button></td></tr>
+          <tr><td>F2</td><td>تحرير الخلية المحددة</td><td><button onclick="copyText('F2')">نسخ</button></td></tr>
+          <tr><td>F4</td><td>تكرار آخر إجراء</td><td><button onclick="copyText('F4')">نسخ</button></td></tr>
+          <tr><td>Ctrl + 1</td><td>فتح إعدادات تنسيق الخلايا</td><td><button onclick="copyText('Ctrl + 1')">نسخ</button></td></tr>
+          <tr><td>Ctrl + T</td><td>تحويل النطاق إلى جدول</td><td><button onclick="copyText('Ctrl + T')">نسخ</button></td></tr>
+        </tbody>
+      </table>
+    </div>
   </main>
 
-  <div id="copyMessage">تم النسخ</div>
-
-  <footer>
-    © 2025 محمد فتحي
+  <!-- ====== الفوتر ====== -->
+  <footer class="footer">
+    <p>© 2025 العالمي – جميع الحقوق محفوظة</p>
   </footer>
+
 </body>
 </html>

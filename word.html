@@ -3,83 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>اختصارات Word</title>
+  <title>اختصارات Word - العالمي</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="page-header">
-    <h1>📘 اختصارات Microsoft Word</h1>
-    <input type="text" id="searchBox" placeholder="ابحث عن اختصار...">
+
+  <!-- ===== الهيدر ===== -->
+  <header class="header">
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="word.html" class="active">وورد</a></li>
+        <li><a href="excel.html">إكسل</a></li>
+        <li><a href="tools.html">الأدوات</a></li>
+        <li><a href="blog.html">المدونة</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="shortcuts-container">
-    
-    <section>
-      <h2>📑 التنسيق</h2>
-      <div class="cards">
-        <div class="card">Ctrl + B — جعل النص عريض</div>
-        <div class="card">Ctrl + I — جعل النص مائل</div>
-        <div class="card">Ctrl + U — وضع خط تحت النص</div>
-        <div class="card">Ctrl + Shift + C — نسخ التنسيق</div>
-        <div class="card">Ctrl + Shift + V — لصق التنسيق</div>
-        <div class="card">Ctrl + Space — إزالة التنسيق</div>
-      </div>
-    </section>
+  <!-- ===== محتوى الصفحة ===== -->
+  <main class="content">
+    <h1>اختصارات Microsoft Word</h1>
+    <p>تعلّم جميع اختصارات Word لتوفير الوقت وزيادة الإنتاجية أثناء الكتابة والتنسيق 💪</p>
 
-    <section>
-      <h2>✍️ الكتابة والتحكم في النص</h2>
-      <div class="cards">
-        <div class="card">Ctrl + A — تحديد الكل</div>
-        <div class="card">Ctrl + C — نسخ</div>
-        <div class="card">Ctrl + V — لصق</div>
-        <div class="card">Ctrl + X — قص</div>
-        <div class="card">Ctrl + Z — تراجع</div>
-        <div class="card">Ctrl + Y — إعادة</div>
-      </div>
-    </section>
+    <!-- هنا محتوى صفحتك الأصلية بالكامل -->
+    <div class="shortcuts-container">
+      <input type="text" id="searchInput" placeholder="ابحث عن اختصار..." onkeyup="searchTable()">
 
-    <section>
-      <h2>🔍 التنقل</h2>
-      <div class="cards">
-        <div class="card">Ctrl + F — البحث</div>
-        <div class="card">Ctrl + H — استبدال</div>
-        <div class="card">Ctrl + Home — الانتقال إلى بداية المستند</div>
-        <div class="card">Ctrl + End — الانتقال إلى نهاية المستند</div>
-        <div class="card">Ctrl + → — الانتقال إلى الكلمة التالية</div>
-        <div class="card">Ctrl + ← — الرجوع إلى الكلمة السابقة</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>💾 الحفظ والطباعة</h2>
-      <div class="cards">
-        <div class="card">Ctrl + S — حفظ المستند</div>
-        <div class="card">F12 — حفظ باسم</div>
-        <div class="card">Ctrl + P — طباعة المستند</div>
-        <div class="card">Ctrl + O — فتح مستند</div>
-        <div class="card">Ctrl + N — مستند جديد</div>
-        <div class="card">Alt + F4 — إغلاق Word</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>🧭 التنسيق العام</h2>
-      <div class="cards">
-        <div class="card">Ctrl + E — توسيط النص</div>
-        <div class="card">Ctrl + L — محاذاة لليسار</div>
-        <div class="card">Ctrl + R — محاذاة لليمين</div>
-        <div class="card">Ctrl + J — ضبط النص</div>
-        <div class="card">Ctrl + Shift + > — تكبير حجم الخط</div>
-        <div class="card">Ctrl + Shift + < — تصغير حجم الخط</div>
-      </div>
-    </section>
+      <table id="shortcutsTable">
+        <thead>
+          <tr>
+            <th>الاختصار</th>
+            <th>الوصف</th>
+            <th>نسخ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ctrl + N</td>
+            <td>فتح مستند جديد</td>
+            <td><button onclick="copyText('Ctrl + N')">نسخ</button></td>
+          </tr>
+          <tr>
+            <td>Ctrl + O</td>
+            <td>فتح ملف محفوظ</td>
+            <td><button onclick="copyText('Ctrl + O')">نسخ</button></td>
+          </tr>
+          <tr>
+            <td>Ctrl + S</td>
+            <td>حفظ الملف الحالي</td>
+            <td><button onclick="copyText('Ctrl + S')">نسخ</button></td>
+          </tr>
+          <tr>
+            <td>Ctrl + P</td>
+            <td>طباعة المستند</td>
+            <td><button onclick="copyText('Ctrl + P')">نسخ</button></td>
+          </tr>
+          <tr>
+            <td>Ctrl + B</td>
+            <td>خط عريض</td>
+            <td><button onclick="copyText('Ctrl + B')">نسخ</button></td>
+          </tr>
+          <tr>
+            <td>Ctrl + I</td>
+            <td>خط مائل</td>
+            <td><button onclick="copyText('Ctrl + I')">نسخ</button></td>
+          </tr>
+          <tr>
+            <td>Ctrl + U</td>
+            <td>خط أسفل النص</td>
+            <td><button onclick="copyText('Ctrl + U')">نسخ</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </main>
 
-  <div id="copyMessage">تم النسخ</div>
-
-  <footer>
-    © 2025 محمد فتحي
+  <!-- ===== الفوتر ===== -->
+  <footer class="footer">
+    <p>© 2025 العالمي – جميع الحقوق محفوظة</p>
   </footer>
+
 </body>
 </html>
