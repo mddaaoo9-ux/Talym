@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://mddaaoo9-ux.github.io/Talym/</loc>
-    <lastmod>2025-11-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://mddaaoo9-ux.github.io/Talym/word.html</loc>
-    <lastmod>2025-11-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://mddaaoo9-ux.github.io/Talym/excel.html</loc>
-    <lastmod>2025-11-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <url><loc>https://mddaaoo9-ux.github.io/Talym/</loc></url>
+  <url><loc>https://mddaaoo9-ux.github.io/Talym/word.html</loc></url>
+  <url><loc>https://mddaaoo9-ux.github.io/Talym/excel.html</loc></url>
+  <url><loc>https://mddaaoo9-ux.github.io/Talym/tools.html</loc></url>
+  <url><loc>https://mddaaoo9-ux.github.io/Talym/blog.html</loc></url>
+  <url><loc>https://mddaaoo9-ux.github.io/Talym/about.html</loc></url>
+  <url><loc>https://mddaaoo9-ux.github.io/Talym/contact.html</loc></url>
 </urlset>
